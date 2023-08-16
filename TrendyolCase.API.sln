@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrendyolCase.API", "TrendyolCase.API\TrendyolCase.API.csproj", "{19BE5279-A595-4AED-B361-552312423EE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrendyolCase.DataAccess", "TrendyolCase.DataAccess\TrendyolCase.DataAccess.csproj", "{B533291E-9E85-44BF-A7B4-A3576CDEE9EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19BE5279-A595-4AED-B361-552312423EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19BE5279-A595-4AED-B361-552312423EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19BE5279-A595-4AED-B361-552312423EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19BE5279-A595-4AED-B361-552312423EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B533291E-9E85-44BF-A7B4-A3576CDEE9EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B533291E-9E85-44BF-A7B4-A3576CDEE9EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B533291E-9E85-44BF-A7B4-A3576CDEE9EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B533291E-9E85-44BF-A7B4-A3576CDEE9EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBB2A912-5FC8-46E0-8866-3865F49EDCFE}
+	EndGlobalSection
+EndGlobal

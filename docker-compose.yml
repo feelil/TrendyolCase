@@ -1,0 +1,32 @@
+version: '3.4'
+
+networks:
+  dockerapi-dev:
+    driver: bridge 
+
+services:
+  dockerapi:
+    image: dockerapi:latest
+    depends_on:
+      - "postgres_image"
+    build:
+      context: .
+      dockerfile: ./TrendyolCase.API/Dockerfile
+    ports:
+      - "8000:80"     
+    environment:
+      DB_CONNECTION_STRING: "Server=postgres_image;Database=trendyoldb;User Id=postgres;Password=postgres;"
+    networks:
+      - dockerapi-dev  
+  
+  postgres_image:
+    image: postgres:10.5
+    ports:
+      - '5434:5432'
+    restart: always   
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "trendyoldb"
+    networks:
+      - dockerapi-dev

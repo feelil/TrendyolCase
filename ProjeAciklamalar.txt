@@ -12,7 +12,7 @@
 		NOT : http://localhost:8000/home adresine ilk girildiğinde DB de Trendyoldb adındaki veritabanı oluşturuluyor ve içerisndeki pattern tablosuna kayıt atılıyor.
 		Proje Testi için Potman gibi bir tool ile yada direk aşağıdaki gibi  adresi tarayıcıya yapıştırarak kontrol edilebilir.
 
-	Web linkten DeepLinke çevir Get: http://localhost:8000/home/WebUrlToDeepLink?webUrl=http://www.trendyol.com/ovivo/grano-fume-toprakli-priz-cerceve-p-73733267?boutiqueId=588578%26merchantId=179621
+		Web linkten DeepLinke çevir :Get: http://localhost:8000/home/WebUrlToDeepLink?webUrl=http://www.trendyol.com/ovivo/grano-fume-toprakli-priz-cerceve-p-73733267?boutiqueId=588578%26merchantId=179621
 		Deep Link ten Web Linke çevir : Get: http://localhost:8000/home/DeepLinkToWebUrl?deepLink=ty://?Page=Product%26ContentId=31185740%26boutiqueId=580743%26merchantId=294914
 		
 4)		
@@ -23,7 +23,7 @@
 							"DeepLink"			=>  Gelen webLink parse işelminden sonra response olarak dönen DeepLink adresi . (Ör : ty://?Page=Product&ContentId=31185740&boutiqueId=580743&merchantId=294914)
 							"ContentId" ve diğer kolonlar  ihtiyaç olmadığı için boş bırakıldı.
 							
-		RegexPattern  => 
+			RegexPattern  => 
 							"Pattern" kolunu    => Bu alana istenilen Deeplinke çevirilmek istenen WebURL uygun Regex yazılır.
 							"Name"    kolunu 	=> Bu alana Pascal Case olarak bir isim verilir. (Bu isim ile aynı olan c# class ı da sonra oluşturulur.)
 							
